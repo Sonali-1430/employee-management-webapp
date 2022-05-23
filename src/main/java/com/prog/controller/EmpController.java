@@ -56,8 +56,8 @@ public class EmpController {
 
 	@PostMapping("/update")
 	public String updateEmp(@ModelAttribute Employee e, HttpSession session) {
-		 
-		session.setAttribute("msg", "Emp Data Updated Sucessfully..");
+		service.addEmp(e);
+		session.setAttribute("msg", "Emp Data Update Sucessfully..");
 		return "redirect:/";
 	}
 

@@ -44,7 +44,8 @@
 
 						<form th:action="@{/update}" method="post" th:object="${emp}">
 <input type="hidden" th:value="${emp.id}" name="id">
-							<div class="form-group">
+							
+                             <div class="form-group">
 								<label>Enter Full Name</label> <input type="text"
 									class="form-control" name="name" th:value="${emp.name}">
 							</div>
